@@ -17,3 +17,8 @@ window.addEventListener("load", () => {
         bar.style.width = "100%";
     }, 100);
 });
+
+
+  const now = new Date();  
+  const formattedDate = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+  document.getElementById('timeD').innerText = formattedDate;
